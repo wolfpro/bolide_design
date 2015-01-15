@@ -1,0 +1,466 @@
+@import "http://webfonts.ru/import/roboto.css";
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1280px;
+    max-width: 2560px;
+}
+a {
+    text-decoration: none;
+}
+#page_align {
+    width: 100%;
+}
+header {
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #517296;
+}
+#header-nav {
+    width: 1000px;
+    height: 70px;
+    margin-left: 240px;
+}
+#header-nav ul {
+    margin-top: -75px;
+}
+#header-nav li {
+    list-style: none;
+    float: left;
+}
+#header-nav a {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    margin-top: 46px;
+    text-align: center;
+    margin-right: 13px;
+    border-bottom: 3px solid #517296;
+    padding: 0 8px 2px;
+}
+#header-nav a:hover {
+    border-bottom: 3px solid #4AF2A9;
+}
+#header-nav li.active a {
+    border-bottom: 3px solid #4AF2A9;
+}
+#content {
+    margin-top: 70px;
+}
+.preview_text {
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 100;
+    color: #555;
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 1.1em;
+    padding-top: 42px;
+}
+.logo {
+    padding-top: 42px;
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    width: auto;
+}
+.logo-top {
+    padding-top: 19px;
+    padding-left: 30px;
+    height: 30px;
+    width: auto;
+}
+#action {
+    background: url(../images/artleo.com-399543312.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/
+    background-attachment: fixed;
+    height: 1048px;
+}
+.action_text {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    display: block;
+    text-align: center;
+    padding-top: 42px;
+}
+.button a{
+    text-indent: -9999px;
+    width: 75px;
+    margin: 0 auto;
+    margin-top: 10px;
+    z-index: 50;
+    height: 75px;
+    display:block;
+    outline: none;
+    background-image: url(../images/arrow-down2.png);
+}
+.down:hover{
+    background-position: 75px 75px;
+}
+#we{
+    height: 600px;
+}
+#why_us {
+    /*background: url(../images/why1.jpg);
+    background-size: 100%;*/
+    background: #3AAACF;
+    height: 600px;
+    padding: 0 0 75px;
+}
+.advantages {
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 1.1em;
+    padding-top: 42px;
+    padding-bottom: 70px;
+}
+.wrap {
+    margin: 0 auto;
+    margin-top: 65px;
+    padding: 10px;
+    width: 1170px;
+    height: 200px;
+}
+.icon_a {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.col1 {
+    float: left;
+    height: 300px;
+    width: 390px;
+}
+.col2 {
+    height: 300px;
+    float: left;
+    width: 390px;
+}
+.col3 {
+    height: 300px;
+    float: left;
+    width: 390px;
+}
+.wraper{
+    padding: 10px;
+    margin-top: 65px;
+    margin: 0 auto;
+    width: 1560px;
+    height: 200px;
+}
+.a_col1{
+    float: left;
+    height: 200px;
+    width: 390px;
+}
+.a_col2{
+    float: left;
+    height: 200px;
+    width: 390px;
+}
+.a_col3{
+    float: left;
+    height: 200px;
+    width: 390px;
+}
+.a_col4{
+    float: left;
+    height: 200px;
+    width: 390px;
+}
+.c_wrap {
+    margin: 0 auto;
+    margin-top: 65px;
+    padding: 10px;
+    width: 1260px;
+    height: 200px;
+}
+.c_col1 {
+    margin: 20px;
+    background: gray;
+    float: left;
+    height: 600px;
+    width: 380px;
+}
+.c_col2 {
+    margin: 20px;
+    background: gray;
+    height: 600px;
+    float: left;
+    width: 380px;
+}
+.c_col3 {
+    margin: 20px;
+    background: gray;
+    height: 600px;
+    float: left;
+    width: 380px;
+}
+.c_col {
+    margin-top: 20px;
+    background: white;
+    height: 400px;
+    width: 380px;
+}
+.c_comments {
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 200;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+}
+.price_comments {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 200;
+    color: black;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+}
+.text_comments {
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 200;
+    color: gray;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+}
+.heart {
+    position: relative;
+    width: 80px;
+    height: auto;
+    top: -27px;
+}
+.comments {
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 200;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+}
+#portfolio {
+    background: #fff;
+    height: 1000px;
+}
+#menu {
+    background: #eee;
+    height: 600px;
+    padding: 0 0 90px;
+}
+.visit_icon{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.landing_page{
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 200;
+    color: gray;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+}
+.btn_alt{
+    display: block;
+    width: 180px;
+    margin-top: 70px;
+    border-radius: 5px;
+    background: #3AAACF;
+    padding: 9px 37px 9px;
+    font-family: 'Roboto';
+    letter-spacing: -1px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+.btn_alt:hover{
+    background: #1B81B1;
+}
+#order {
+    height: 800px;
+    padding-bottom: 80px;
+    background: #3AAACF;
+}
+.center {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 410px;
+}
+.controls {
+    margin-bottom: 20px;
+}
+.input-xlarge {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    background: #cdebeb;
+    font-size: 15px;
+    letter-spacing: -1px;
+    width: 400px;
+    height: 50px;
+    border: solid 1px #eee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.input-xlarge2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto';
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 15px;
+    letter-spacing: -1px;
+    width: 400px;
+    height: 50px;
+    border: solid 1px #eee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.btn {
+    margin-top: 70px;
+}
+.btn2 {
+    margin-top: 45px;
+}
+#bt {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: 0;
+    color: #fff;
+}
+#bt_d {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: 0;
+    color: #fff;
+}
+.btn_order {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+/*.bt a{
+	text-indent: -9999px;
+	width:64px;
+	z-index: 50;
+	height:64px;
+	bottom: 50%;
+	display:block;
+	outline: none;
+	background-image: url(../images/rocket.png);
+}
+.btn_order{
+	display: block;
+	border: none;
+	font-family: 'Roboto';
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 10px;
+	background: #3AAACF;
+	width: 150px;
+	height: 40px;
+	margin: 0 auto;
+}
+.btn a:hover{
+	background-image: url(../images/rocket_hover.png);
+	width: 64px;
+	height: 64px;
+}*/
+
+input:focus {
+    border: 1px solid green;
+    -moz-border: 1px solid green;
+    -webkit-border: 1px solid green;
+}
+.notification_error {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: red;
+    border: 1px solid #f53026;
+    height: auto;
+    width: 400px;
+    margin: 15px 0;
+    padding: 10px;
+    background: white;
+    text-align: left;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.notification_ok {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: green;
+    border: 1px #50F526 solid;
+    height: auto;
+    width: 400px;
+    margin: 15px 0;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#about_us {
+    height: 1000px;
+    background: #eee;
+}
+.footer-text {
+    font-family: 'Roboto';
+    font-size: 17px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+footer {
+    height: 200px;
+    background: #929292;
+}

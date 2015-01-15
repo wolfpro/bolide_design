@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <title>Bolide Design</title>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/menu1.js"></script>
+    <script type="text/javascript" src="js/zoom.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+    <script type="text/javascript" src="js/message2.js"></script>
+    <script type="text/javascript" src="js/down.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("#menu center a").on('click', function(e) {
+            $('html,body').stop().animate({
+                scrollTop: $('#order').offset().top - 69
+            }, 400);
+            e.preventDefault();
+        });
+    });
+    </script>
+    <!--<script type="text/javascript">
+        $(document).ready(function() {
+    $('#header-nav').onePageNav();
+});
+    </script>-->
+</head>
+
+<body>
+    <div id="page_align">
+        <header>
+            <img class="logo-top" src="images/Logo.png" alt="logo">
+            <div id="header-nav">
+                <ul>
+                    <li><a href="#action">Главная</a>
+                    </li>
+                    <li><a href="#we">О нас</a>
+                    </li>
+                    <li><a href="#menu">Наша специализация</a>
+                    </li>
+                    <li><a href="#why_us">Наши преимущества</a>
+                    </li>
+                    <li><a href="#portfolio">Портфолио</a>
+                    </li>
+                    <li><a href="#order">Оформить заказ</a>
+                    </li>
+                    <li><a href="#about_us">Прайс</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="content">
+            <section id="action">
+                <img class="logo" src="images/Logo.png" alt="logo">
+                <p class="action_text">Разработка сайтов!</p>
+                <p class="preview_text" style="color: white; font-size: 30px; margin-bottom: 45px; margin-top: 80px;">Вы можете заказть у нас звонок</p>
+                <p class="message-feedback"></p>
+                 <form id="ajax-contact-form-too" action="sendmail.php" method="POST">
+                    <div class="controls">
+                        <input type="text" id="name2" name="feedback_name" placeholder="Имя" class="input-xlarge2">
+                    </div>
+                    <div class="controls">
+                        <input type="tel" id="tel2" name="feedback_tel" placeholder="Телефон" class="input-xlarge2">
+                    </div>
+                    <div id="fields2"></div>
+                    <div id="note2"></div>
+                    <div class="btn">
+                        <button id="bt_d"><img src="images/phone.png" class="btn_order" alt="Заказать">
+                        </button>
+                    </div>
+                </form>
+                <p style=" font-family: 'Roboto'; text-align: center; letter-spacing: -1px; font-weight: lighter; font-size: 35px; color: white; margin-top: 190px; text-shadow: 0 2px 6px black;">О нас</p>
+                <div class="button">
+                    <a href="#we" class="down">Down</a>
+                </div>
+            </section>
+            <section id="we">
+                <p class="preview_text">О нас</p>
+                <p>Мы молодая компания </p>
+            </section>
+            <section id="menu">
+                <p class="preview_text" style="padding-bottom: 135px;">Наша специализация:</p>
+                <div class="wraper">
+            <div class="a_col1">
+                <img class="visit_icon" src="images/barchart.png" alt="Landing Page">
+                <p class="landing_page">Разработка<br>Landing page</p>
+            </div>
+            <div class="a_col2">
+                <img class="visit_icon" src="images/clipboard.png" alt="Visit">
+                <p class="landing_page">Разработка<br>Сайтов-визиток</p>
+            </div>
+            <div class="a_col3">
+                <img class="visit_icon" src="images/briefcase.png" alt="Visit">
+                <p class="landing_page">Разработка Корпоративных сайтов</p>
+            </div>
+            <div class="a_col4">
+                <img class="visit_icon" src="images/cart.png" alt="Visit">
+                <p class="landing_page">Разработка<br>Интернет магазинов</p>
+            </div>
+                </div>
+                <center><a class="btn_alt" href="#order">Оформить заказ</a></center>
+        </section>
+        <section id="why_us">
+            <p class="advantages">Наши преимущества</p>
+            <div class="wrap">
+                <div class="col1">
+                    <img class="icon_a" src="images/creditcard.png" alt="Доступные цены">
+                    <p class="comments">Доступные цены!</p>
+                </div>
+                <div class="col2">
+                    <img class="icon_a" src="images/check.png" alt="Быстрое выполнение заказов">
+                    <p class="comments">Быстрое выполнение заказов!</p>
+                </div>
+                <div class="col3">
+                    <img class="icon_a" src="images/brush-pencil.png" alt "Современный качественный дизайн">
+                    <p class="comments">Современный качественный дизайн!</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <p class="preview_text">Портфолио</p>
+        </section>
+        <section id="order">
+            <p class="advantages">Оформить заказ:</p>
+            <p class="advantages" style="font-size: 40px; margin-top: -50px;">Оставьте заявку, мы с вами свяжемся.</p>
+            <div class="center">
+                <form id="ajax-contact-form" action="send.php" method="POST">
+                    <div class="controls">
+                        <input type="text" id="name" name="name" placeholder="Имя" class="input-xlarge">
+                    </div>
+                    <div class="controls">
+                        <input type="text" id="email" name="email" placeholder="E-mail" class="input-xlarge">
+                    </div>
+                    <div class="controls">
+                        <input type="tel" name="tel" id="tel" placeholder="Телефон" class="input-xlarge">
+                    </div>
+                    <div id="fields"></div>
+                    <div id="note"></div>
+                    <div class="btn">
+                        <button id="bt"><img src="images/rocket.png" class="btn_order" alt="Заказать">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="about_us">
+            <p class="preview_text">Прайс</p>
+            <div class="c_wrap">
+                <div class="c_col1">
+                    <p class="c_comments">Сайт Визитка</p>
+                    <div class="c_col">
+                        <br>
+                        <p class="price_comments">от 8000р.</p>
+                        <p class="text_comments">Быстро</p>
+                        <p class="text_comments">Быстро</p>
+                        <p class="text_comments">Быстро</p>
+                    </div>
+                </div>
+                <div class="c_col2">
+                    <p class="c_comments">Продающие страницы (Landing Page)</p>
+                    <div class="c_col">
+                        <br>
+                        <p class="price_comments">от 12000</p>
+                        <p class="text_comments">Быстро</p>
+                        <p class="text_comments">Быстро</p>
+                        <p class="text_comments">Быстро</p>
+                    </div>
+                </div>
+                <div class="c_col3">
+                    <p class="c_comments">Продвижение</p>
+                    <div class="c_col">
+                        <br>
+                        <p class="price_comments">от 9000</p>
+                        <p class="text_comments">Быстро</p>
+                        <p class="text_comments">Быстро</p>
+                        <p class="text_comments">Быстро</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="footer-text">© BOLIDE DESIGN, 2015</p>
+    </footer>
+    </div>
+</body>
+
+</html>
