@@ -204,21 +204,21 @@ header {
 }
 .c_col1 {
     margin: 20px;
-    background: gray;
+    background: #2a2f3b;
     float: left;
     height: 600px;
     width: 380px;
 }
 .c_col2 {
     margin: 20px;
-    background: gray;
+    background: #2a2f3b;
     height: 600px;
     float: left;
     width: 380px;
 }
 .c_col3 {
     margin: 20px;
-    background: gray;
+    background: #2a2f3b;
     height: 600px;
     float: left;
     width: 380px;
